@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const routes = require('./controllers/routes.js');
 
 app.use(
-   bodyParser,
+   bodyParser.urlencoded({ extended: false }),
    routes,
 );
 
